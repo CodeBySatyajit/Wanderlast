@@ -1,0 +1,235 @@
+body {
+    font-family: 'plus jakarta sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2rem;
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424b;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-weight: 600 !important;
+}
+
+.search-bar{
+    align-items: center;
+}
+
+.search-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 25px !important;
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem !important;
+}
+
+.search-btn:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid gray !important;
+}
+
+.search-box {
+    border-radius: 25px !important;
+    padding: 0.3rem 3rem 0.3rem 1rem !important;
+}
+
+footer {
+    width: 100%;
+    height: 8rem;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    bottom: 0;
+
+}
+
+.f-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.f-info-social i {
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 600;
+    gap: 5rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+
+.card-text {
+    margin-top: -1.4rem !important;
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    height: 18rem !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+    /* margin-bottom: -1.3rem !important; */
+}
+
+.card img {
+    height: 18rem !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+    /* margin-bottom: -1.3rem !important; */
+}
+
+
+.card-body {
+    padding: 0 !important;
+    margin-top: 0.6rem !important;
+
+
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    background-color: white;
+    opacity: 0.3 !important;
+}
+
+label.form-label {
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+}
+
+button {
+    background-color: #fe424b !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    font-weight: 600 !important;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.show-img {
+    border-radius: 10px;
+    width: 35vw;
+}
+
+@media (max-width: 800px) {
+    .show-img {
+        width: 60vw;
+    }
+}
+
+.card-body p {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+}
+
+.btn-2 {
+    gap: 3rem;
+    display: flex;
+}
+
+.edit-btn button a {
+    padding: 3px 30px;
+}
+
+.delete-btn button {
+    background-color: #222222 !important;
+}
+
+.btn-outline-dark {
+    background-color: rgb(151, 54, 54) !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+
+}
+
+.btn-outline-dark:hover {
+    background-color: #555555 !important;
+    color: white !important;
+}
+
+/* reviews */
+
+.review {
+    /* border: none !important; */
+    border: 1px solid #ddd !important;
+    margin-bottom: 1.5rem !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important;
+    padding: 10px 15px !important;
+}
+
+.review p {
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.reviews-box {
+    margin-top: 2rem !important;
+    display: grid !important;
+    gap: 1rem !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.btn-delete-review {
+    background-color: #222222 !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    font-weight: 600 !important;
+}
+
+.btn-delete-review:hover {
+    background-color: rgb(227, 63, 63) !important;
+    color: white !important;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+}
