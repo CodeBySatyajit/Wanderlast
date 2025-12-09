@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const WrapAsync = require("../utils/wrapasync.js");
+const WrapAsync = require("../utils/wrapAsync.js");
 const userController = require("../controllers/user.js");
 
 router.route("/signup")
