@@ -12,7 +12,7 @@ const { storage } = require("../cloudConfig");
 const upload = multer({ storage });
 
 
-
+//use the joi schema to validate listing data
 const listingValidate = (req, res, next) => {
     const { error } = listingSchema.validate(req.body);
     if (error) {

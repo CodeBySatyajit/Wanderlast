@@ -82,19 +82,28 @@ main()
     console.error("Error connecting to MongoDB", err);
   });
 
+
+//connect to the database
 async function main() {
   await mongoose.connect(db_url);
 }
+
+//callback for all unhandled routes
+//express error class used here
 
 app.use((req, res, next) => {
   next(new ExpressError(404, "Page Not Found"));
 });
 
+
+//generic error handler middleware
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something went wrong" } = err;
   res.render("error.ejs", { message, statusCode });
 });
 
+
+//server start
 app.listen(3000, function () {
   console.log("Server started on port 3000");
 });

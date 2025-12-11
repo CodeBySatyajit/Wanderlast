@@ -1,6 +1,8 @@
 const Joi = require('joi');
 const { create } = require('./models/listing');
 
+//handel validation using joi
+
 module.exports.listingSchema = Joi.object({
   listing: Joi.object({
     title: Joi.string().required(),
